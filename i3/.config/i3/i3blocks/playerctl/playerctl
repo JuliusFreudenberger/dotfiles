@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+#playerctl metadata --player=spotify &> /dev/null
+playerctl -i firefox metadata &> /dev/null
+if [ $? != 0 ]; then
+	exit
+fi
+
+#ALBUM=$(playerctl metadata --player=spotify --format "{{album}}")
+#TITLE=$(playerctl metadata --player=spotify --format "{{title}}")
+#ARTIST=$(playerctl metadata --player=spotify --format "{{artist}}")
+
+ALBUM=$(playerctl -i firefox metadata --format "{{album}}")
+TITLE=$(playerctl -i firefox metadata --format "{{title}}")
+ARTIST=$(playerctl -i firefox metadata --format "{{artist}}")
+
+#FULL_OUTPUT=$(playerctl metadata --player=spotify --format "{{ artist }} - {{ title }} -  {{album}}")
+FULL_OUTPUT=$(playerctl -i firefox metadata --format "{{ artist }} - {{ title }} -  {{album}}")
+SHORT_OUTPUT="${ARTIST::40} - ${TITLE::40}"
+
+if [ "$ALBUM" = "$TITLE" ]; then
+	echo $SHORT_OUTPUT
+else
+	echo $FULL_OUTPUT
+fi
+echo $SHORT_OUTPUT
+
+case $BLOCK_BUTTON in
+	3) playerctl -i firefox play-pause;;
+esac

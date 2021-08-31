@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#OUTPUT=$(ps aux -o args=ovpn| grep ovpn | head -n 1 | cut -s -d' ' -f 26 | cut -d'.' -f 1)
+OUTPUT=$(ps a -o args | grep ovpn | head -n 1 | cut -s -d' ' -f 3 | cut -d'.' -f 1)
+if [ $(echo $OUTPUT | wc -w) -gt 0 ] ; then
+	echo $OUTPUT
+	echo " "
+else 
+	exit 1
+fi
+

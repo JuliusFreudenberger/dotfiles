@@ -1,0 +1,5 @@
+#!/bin/sh
+#echo $(iwgetid -r)
+#echo $(iwgetid -r | cut -c -7)
+echo $(nmcli --fields GENERAL.CONNECTION device show wlp4s0 | cut -d':' -f 2)
+echo ""

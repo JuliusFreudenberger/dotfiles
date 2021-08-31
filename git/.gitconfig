@@ -1,0 +1,13 @@
+[alias]
+	status = st
+	st = status
+	co = checkout
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[diff]
+	guitool = meld
+	tool = meld
+[difftool]
+	prompt = false

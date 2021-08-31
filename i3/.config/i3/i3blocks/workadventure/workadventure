@@ -1,0 +1,2 @@
+curl -s https://api.fachschaft-it.de/metrics | grep -Ei ".*clients.*floor[0-9]" | awk '{printf "%d ", $2}' | awk '{sub(/\|$/,"");print}'
+echo

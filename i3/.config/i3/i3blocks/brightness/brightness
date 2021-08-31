@@ -1,0 +1,5 @@
+echo $(expr $(brightnessctl get) / $(expr $(brightnessctl max) / 100))
+case $BLOCK_BUTTON in
+  4) brightnessctl set +10% ;;
+  5) brightnessctl set 10%- ;;
+esac
