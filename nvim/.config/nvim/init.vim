@@ -17,6 +17,8 @@ endif
 call plug#begin(stdpath('config') . '/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
 let g:vimtex_view_method = 'zathura'
