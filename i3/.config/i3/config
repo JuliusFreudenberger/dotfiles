@@ -42,7 +42,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym	$mod+Tab exec --no-startup-id rofi -show window
 #bindsym $mod+Shift+p exec --no-startup-id bwmenu
-bindsym $mod+Shift+p exec --no-startup-id rofi-rbw --action copy-password
+bindsym $mod+Shift+p exec --no-startup-id rofi-rbw --action copy
 
 bindsym $mod+Shift+v exec --no-startup-id /home/julius/.local/bin/startvm.sh
 
