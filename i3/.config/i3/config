@@ -299,12 +299,13 @@ mode "resize" {
 exec dunst
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id solaar -w hide
 #exec --no-startup-id wpa_gui -qt
 exec --no-startup-id nm-applet
 # exec --no-startup-id blueman-applet
 exec redshift-gtk
 exec --no-startup-id dockd --daemon
-#exec light-locker
+exec light-locker
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
