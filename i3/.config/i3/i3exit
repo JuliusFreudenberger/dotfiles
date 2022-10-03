@@ -2,7 +2,7 @@
 
 case "$1" in
     lock)
-        i3lock -B 10 --pass-media-keys --pass-screen-keys
+        light-locker-command -l
         ;;
     switch_user)
 	dm-tool lock
