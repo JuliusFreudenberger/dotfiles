@@ -206,7 +206,7 @@ bindsym $mod+Ctrl+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
-assign [class="Thunderbird"] $ws6
+assign [class="thunderbird"] $ws6
 assign [class="TelegramDesktop"] $ws5
 assign [class="discord"] $ws5
 assign [class="Signal"] $ws5
