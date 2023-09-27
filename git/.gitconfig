@@ -11,3 +11,5 @@
 	tool = meld
 [difftool]
 	prompt = false
+[core]
+	autocrlf = input
