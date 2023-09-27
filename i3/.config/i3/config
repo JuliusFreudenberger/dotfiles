@@ -84,14 +84,17 @@ bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 bindsym $mod+Shift+d mode "$mode_applications"
-set $mode_applications (D)iscord, (S)ignal, (T)elegram, (N)extcloud, (M)usic, (B)luetooth
+set $mode_applications (D)iscord, Slac(k), (S)ignal, (T)elegram, (C)inny, (N)extcloud, (M)usic, (B)luetooth, (V)alent
 mode "$mode_applications" {
     bindsym d exec flatpak run com.discordapp.Discord
+    bindsym k exec flatpak run com.slack.Slack
     bindsym s exec signal-desktop
     bindsym t exec telegram-desktop
+    bindsym c exec cinny
     bindsym n exec nextcloud
     bindsym m exec flatpak run com.spotify.Client
     bindsym b exec blueman
+    bindsym v exec valent
 
     # exit mode: "Enter" or "Escape"
     bindsym Return mode "default"
