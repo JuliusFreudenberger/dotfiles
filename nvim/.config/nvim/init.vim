@@ -3,6 +3,7 @@ set relativenumber
 set termguicolors
 set expandtab
 set shiftwidth=2
+set linebreak
 
 :augroup numbertoggle
 :  autocmd!
@@ -21,5 +22,8 @@ Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
+Plug 'nvarner/typst-lsp'
+Plug 'kaarmu/typst.vim'
 let g:vimtex_view_method = 'zathura'
+let g:coc_filetype_map = {'tex': 'latex'}
 call plug#end()
