@@ -2,8 +2,8 @@
 source $ZDOTDIR/zsh-git-prompt/zshrc.sh
 source $ZDOTDIR/window-title-bar.sh
 source $ZDOTDIR/git-aliases.sh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _ignored
