@@ -72,6 +72,7 @@ bindsym XF86Tools exec playerctl previous
 # Start Applications
 bindsym $mod+F2 exec firefox
 bindsym $mod+Shift+F2 exec firefox --private-window
+bindsym $mod+Ctrl+F2 exec rofirefox
 bindsym $mod+F3 exec nemo
 # bindsym $mod+F3 exec ranger
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -220,7 +221,7 @@ for_window [class="Galculator"] floating enable border pixel 1
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
-for_window [class="Pavucontrol"] floating enable
+for_window [class="pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="System-config-printer.py"] floating enable border normal
