@@ -23,6 +23,9 @@ Plug 'preservim/vim-markdown'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
 Plug 'nvarner/typst-lsp'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'williamboman/mason.nvim'
+Plug 'neovim/nvim-lspconfig'
 Plug 'kaarmu/typst.vim'
 let g:vimtex_view_method = 'zathura'
 let g:coc_filetype_map = {'tex': 'latex'}
