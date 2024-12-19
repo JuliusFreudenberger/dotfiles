@@ -13,3 +13,8 @@
 	prompt = false
 [core]
 	autocrlf = input
+
+[includeIf "gitdir:~/projects/24h/"]
+        path = .gitconfig-dlrg
+[includeIf "gitdir:~/projects/Karlsruhe/"]
+        path = .gitconfig-hka
